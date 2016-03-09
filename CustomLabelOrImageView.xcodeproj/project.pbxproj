@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64D2F4268B19130ADF721E92 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C05C644AE4B86F6C38C50C /* libPods.a */; };
 		7B7980061C906C11008079C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7980051C906C11008079C3 /* main.m */; };
 		7B7980091C906C11008079C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7980081C906C11008079C3 /* AppDelegate.m */; };
 		7B79800C1C906C11008079C3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B79800B1C906C11008079C3 /* ViewController.m */; };
 		7B79800F1C906C11008079C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B79800D1C906C11008079C3 /* Main.storyboard */; };
 		7B7980111C906C11008079C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B7980101C906C11008079C3 /* Assets.xcassets */; };
 		7B7980141C906C11008079C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B7980121C906C11008079C3 /* LaunchScreen.storyboard */; };
+		7B79801D1C907682008079C3 /* QJLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B79801C1C907682008079C3 /* QJLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39C05C644AE4B86F6C38C50C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B7980011C906C11008079C3 /* CustomLabelOrImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomLabelOrImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B7980051C906C11008079C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7B7980071C906C11008079C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +29,10 @@
 		7B7980101C906C11008079C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B7980131C906C11008079C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B7980151C906C11008079C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B79801B1C907682008079C3 /* QJLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJLabel.h; sourceTree = "<group>"; };
+		7B79801C1C907682008079C3 /* QJLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJLabel.m; sourceTree = "<group>"; };
+		82FF4D8C0C01C8DBF7498B72 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B5BD40381617458E606D4E10 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +40,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64D2F4268B19130ADF721E92 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FAF995B9785235C1DBDA1F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5BD40381617458E606D4E10 /* Pods.debug.xcconfig */,
+				82FF4D8C0C01C8DBF7498B72 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		400CF87903FE9C6B2541C0D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39C05C644AE4B86F6C38C50C /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7B797FF81C906C11008079C3 = {
 			isa = PBXGroup;
 			children = (
 				7B7980031C906C11008079C3 /* CustomLabelOrImageView */,
 				7B7980021C906C11008079C3 /* Products */,
+				1FAF995B9785235C1DBDA1F0 /* Pods */,
+				400CF87903FE9C6B2541C0D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +89,8 @@
 				7B7980081C906C11008079C3 /* AppDelegate.m */,
 				7B79800A1C906C11008079C3 /* ViewController.h */,
 				7B79800B1C906C11008079C3 /* ViewController.m */,
+				7B79801B1C907682008079C3 /* QJLabel.h */,
+				7B79801C1C907682008079C3 /* QJLabel.m */,
 				7B7980041C906C11008079C3 /* Supporting Files */,
 			);
 			path = CustomLabelOrImageView;
@@ -86,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B7980181C906C11008079C3 /* Build configuration list for PBXNativeTarget "CustomLabelOrImageView" */;
 			buildPhases = (
+				BA414873135FED35FBDAE635 /* Check Pods Manifest.lock */,
 				7B797FFD1C906C11008079C3 /* Sources */,
 				7B797FFE1C906C11008079C3 /* Frameworks */,
 				7B797FFF1C906C11008079C3 /* Resources */,
+				B0B859CD90898B8FE4EB1C11 /* Embed Pods Frameworks */,
+				9F6028FD6847D9AF129D836B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -105,6 +137,7 @@
 		7B797FF91C906C11008079C3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = QJ;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = jun;
 				TargetAttributes = {
@@ -144,6 +177,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9F6028FD6847D9AF129D836B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0B859CD90898B8FE4EB1C11 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA414873135FED35FBDAE635 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7B797FFD1C906C11008079C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -152,6 +233,7 @@
 				7B79800C1C906C11008079C3 /* ViewController.m in Sources */,
 				7B7980091C906C11008079C3 /* AppDelegate.m in Sources */,
 				7B7980061C906C11008079C3 /* main.m in Sources */,
+				7B79801D1C907682008079C3 /* QJLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +341,11 @@
 		};
 		7B7980191C906C11008079C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5BD40381617458E606D4E10 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CustomLabelOrImageView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jun.cn.CustomLabelOrImageView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -270,9 +354,11 @@
 		};
 		7B79801A1C906C11008079C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82FF4D8C0C01C8DBF7498B72 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CustomLabelOrImageView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jun.cn.CustomLabelOrImageView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -298,6 +384,7 @@
 				7B79801A1C906C11008079C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
