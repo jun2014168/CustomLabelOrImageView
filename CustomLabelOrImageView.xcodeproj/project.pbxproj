@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		64D2F4268B19130ADF721E92 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C05C644AE4B86F6C38C50C /* libPods.a */; };
+		7B01ED451C91A5FB00B864DA /* Icon-iPhone-Small-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B01ED441C91A5FB00B864DA /* Icon-iPhone-Small-40@2x.png */; };
+		7B6583F21C919B5A003C8647 /* QJImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6583F11C919B5A003C8647 /* QJImageView.m */; };
+		7B6583F41C919BAF003C8647 /* Icon-iPhone-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B6583F31C919BAF003C8647 /* Icon-iPhone-60@2x.png */; };
 		7B7980061C906C11008079C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7980051C906C11008079C3 /* main.m */; };
 		7B7980091C906C11008079C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7980081C906C11008079C3 /* AppDelegate.m */; };
 		7B79800C1C906C11008079C3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B79800B1C906C11008079C3 /* ViewController.m */; };
@@ -19,6 +22,10 @@
 
 /* Begin PBXFileReference section */
 		39C05C644AE4B86F6C38C50C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B01ED441C91A5FB00B864DA /* Icon-iPhone-Small-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-iPhone-Small-40@2x.png"; sourceTree = "<group>"; };
+		7B6583F01C919B5A003C8647 /* QJImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJImageView.h; sourceTree = "<group>"; };
+		7B6583F11C919B5A003C8647 /* QJImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJImageView.m; sourceTree = "<group>"; };
+		7B6583F31C919BAF003C8647 /* Icon-iPhone-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-iPhone-60@2x.png"; sourceTree = "<group>"; };
 		7B7980011C906C11008079C3 /* CustomLabelOrImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomLabelOrImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B7980051C906C11008079C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7B7980071C906C11008079C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,6 +98,8 @@
 				7B79800B1C906C11008079C3 /* ViewController.m */,
 				7B79801B1C907682008079C3 /* QJLabel.h */,
 				7B79801C1C907682008079C3 /* QJLabel.m */,
+				7B6583F01C919B5A003C8647 /* QJImageView.h */,
+				7B6583F11C919B5A003C8647 /* QJImageView.m */,
 				7B7980041C906C11008079C3 /* Supporting Files */,
 			);
 			path = CustomLabelOrImageView;
@@ -99,6 +108,8 @@
 		7B7980041C906C11008079C3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7B01ED441C91A5FB00B864DA /* Icon-iPhone-Small-40@2x.png */,
+				7B6583F31C919BAF003C8647 /* Icon-iPhone-60@2x.png */,
 				7B79800D1C906C11008079C3 /* Main.storyboard */,
 				7B7980101C906C11008079C3 /* Assets.xcassets */,
 				7B7980121C906C11008079C3 /* LaunchScreen.storyboard */,
@@ -171,6 +182,8 @@
 			files = (
 				7B7980141C906C11008079C3 /* LaunchScreen.storyboard in Resources */,
 				7B7980111C906C11008079C3 /* Assets.xcassets in Resources */,
+				7B6583F41C919BAF003C8647 /* Icon-iPhone-60@2x.png in Resources */,
+				7B01ED451C91A5FB00B864DA /* Icon-iPhone-Small-40@2x.png in Resources */,
 				7B79800F1C906C11008079C3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B6583F21C919B5A003C8647 /* QJImageView.m in Sources */,
 				7B79800C1C906C11008079C3 /* ViewController.m in Sources */,
 				7B7980091C906C11008079C3 /* AppDelegate.m in Sources */,
 				7B7980061C906C11008079C3 /* main.m in Sources */,
